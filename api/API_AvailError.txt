@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:awsl="http://wsdl.amadeus.com/2010/06/ws/Link_v1"
+	xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<soapenv:Header>
+		<wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+		<wsa:From>
+			<wsa:Address>https://nodea3.test.webservices.amadeus.com/1ASIWGENQHU</wsa:Address>
+		</wsa:From>
+		<wsa:Action>http://webservices.amadeus.com/SATRQT_19_1_1A</wsa:Action>
+		<wsa:MessageID>urn:uuid:bb61bac2-0a8b-ebe4-6d3e-59e014376e66</wsa:MessageID>
+		<wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">urn:uuid:e88e9b9d-7a0f-46e0-8f01-e0cf6325cb67</wsa:RelatesTo>
+		<awsl:TransactionFlowLink>
+			<awsl:Consumer>
+				<awsl:UniqueID>oef5izfzuaawy3ergzk5005h</awsl:UniqueID>
+			</awsl:Consumer>
+			<awsl:Receiver>
+				<awsl:ServerID>urn:uuid:2c4939f4-4fd6-5e3f-89bc-3df9b084b08c</awsl:ServerID>
+			</awsl:Receiver>
+		</awsl:TransactionFlowLink>
+		<awsse:Session TransactionStatusCode="InSeries">
+			<awsse:SessionId>00FLEQLEA6</awsse:SessionId>
+			<awsse:SequenceNumber>1</awsse:SequenceNumber>
+			<awsse:SecurityToken>2WRVDTVYD7B1C1GJJ8UTRCVDZL</awsse:SecurityToken>
+		</awsse:Session>
+	</soapenv:Header>
+	<soapenv:Body>
+		<Air_MultiAvailabilityReply
+			xmlns="http://xml.amadeus.com/SATRSP_19_1_1A">
+			<errorOrWarningSection>
+				<errorOrWarningInfo>
+					<error>
+						<code>CS8</code>
+						<type>001</type>
+						<listResponsible>AMD</listResponsible>
+					</error>
+				</errorOrWarningInfo>
+				<textInformation>
+					<freeTextQualification>
+						<codedIndicator>3</codedIndicator>
+					</freeTextQualification>
+					<freeText>CHECK BOARDING OR DISEMBARKATION POINT</freeText>
+				</textInformation>
+			</errorOrWarningSection>
+		</Air_MultiAvailabilityReply>
+	</soapenv:Body>
+</soapenv:Envelope>

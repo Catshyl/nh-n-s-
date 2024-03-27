@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<soapenv:Header>
+		<wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+		<wsa:From>
+			<wsa:Address>https://nodea3.test.webservices.amadeus.com/1ASIWGENQHU</wsa:Address>
+		</wsa:From>
+		<wsa:Action>http://webservices.amadeus.com/PNRADD_21_1_1A</wsa:Action>
+		<wsa:MessageID>urn:uuid:ddbd9b87-1a53-6684-49c4-733725ff4c97</wsa:MessageID>
+		<wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">uuid:WUYwSUt0NklpQmJzQzZyUg==</wsa:RelatesTo>
+		<awsse:Session TransactionStatusCode="InSeries">
+			<awsse:SessionId>01K0HEARX6</awsse:SessionId>
+			<awsse:SequenceNumber>3</awsse:SequenceNumber>
+			<awsse:SecurityToken>Z5CMYL9I005O2156WV8VONCK6</awsse:SecurityToken>
+		</awsse:Session>
+	</soapenv:Header>
+	<soapenv:Body>
+		<PNR_Reply
+			xmlns="http://xml.amadeus.com/PNRACC_21_1_1A">
+			<pnrHeader>
+				<reservationInfo>
+					<reservation>
+						<companyId>1A</companyId>
+						<controlNumber>5CDJ5B</controlNumber>
+					</reservation>
+				</reservationInfo>
+			</pnrHeader>
+			<securityInformation>
+				<responsibilityInformation>
+					<typeOfPnrElement>RP</typeOfPnrElement>
+				</responsibilityInformation>
+			</securityInformation>
+			<sbrPOSDetails>
+				<sbrUserIdentificationOwn>
+					<originIdentification>
+						<inHouseIdentification1></inHouseIdentification1>
+					</originIdentification>
+				</sbrUserIdentificationOwn>
+			</sbrPOSDetails>
+			<sbrCreationPosDetails>
+				<sbrUserIdentificationOwn>
+					<originIdentification>
+						<inHouseIdentification1></inHouseIdentification1>
+					</originIdentification>
+				</sbrUserIdentificationOwn>
+			</sbrCreationPosDetails>
+			<sbrUpdatorPosDetails>
+				<sbrUserIdentificationOwn>
+					<originIdentification>
+						<inHouseIdentification1></inHouseIdentification1>
+					</originIdentification>
+				</sbrUserIdentificationOwn>
+			</sbrUpdatorPosDetails>
+			<originDestinationDetails>
+				<originDestination></originDestination>
+			</originDestinationDetails>
+			<dataElementsMaster>
+				<marker2></marker2>
+			</dataElementsMaster>
+		</PNR_Reply>
+	</soapenv:Body>
+</soapenv:Envelope>

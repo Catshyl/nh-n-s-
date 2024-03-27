@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:awsl="http://wsdl.amadeus.com/2010/06/ws/Link_v1"
+	xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<soapenv:Header>
+		<wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+		<wsa:From>
+			<wsa:Address>https://nodea3.test.webservices.amadeus.com/1ASIWGENQHU</wsa:Address>
+		</wsa:From>
+		<wsa:Action>http://webservices.amadeus.com/QDQLRQ_11_1_1A</wsa:Action>
+		<wsa:MessageID>urn:uuid:88c726da-ae28-0c44-8596-0c8850eeae72</wsa:MessageID>
+		<wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">urn:uuid:e88e9b9d-7a0f-46e0-8f01-e0cf6325cb67</wsa:RelatesTo>
+		<awsl:TransactionFlowLink>
+			<awsl:Consumer>
+				<awsl:UniqueID>oef5izfzuaawy3ergzk5005h</awsl:UniqueID>
+			</awsl:Consumer>
+			<awsl:Receiver>
+				<awsl:ServerID>urn:uuid:b2d62b7c-3d80-5019-9c2d-123076c660d5</awsl:ServerID>
+			</awsl:Receiver>
+		</awsl:TransactionFlowLink>
+		<awsse:Session TransactionStatusCode="End">
+			<awsse:SessionId>01J8V686DQ</awsse:SessionId>
+			<awsse:SequenceNumber>1</awsse:SequenceNumber>
+			<awsse:SecurityToken>40LJMSYQU873QREZK0O4VOHO</awsse:SecurityToken>
+		</awsse:Session>
+	</soapenv:Header>
+	<soapenv:Body>
+		<Queue_ListReply
+			xmlns="http://xml.amadeus.com/QDQLRR_11_1_1A">
+			<errorReturn>
+				<errorDefinition>
+					<errorDetails>
+						<errorCode>929</errorCode>
+					</errorDetails>
+				</errorDefinition>
+			</errorReturn>
+		</Queue_ListReply>
+	</soapenv:Body>
+</soapenv:Envelope>

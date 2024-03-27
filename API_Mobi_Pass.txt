@@ -1,0 +1,53 @@
+Tên KH: Công ty Cổ phần Hàng không Tre Việt
+
+Tên tài khoản: mfs_trevietapi
+
+Mật khẩu Report: Gf3QjNth
+
+Loại tài khoản: api
+
+API Authen: Basic bWZzX3RyZXZpZXRhcGk6Q0luOUJjZDY=
+
+
+brandname: HK BAMBOO
+-------------
+Request Header:
+
+Content-Type: application/json
+
+Accept: application/json
+
+Authorization: Basic AUTHORIZATION_KEY
+
+AUTHORIZATION_KEY được cấp riêng cho từng khách hàng
+
+Request body
+Theo định dạng RAW, format JSON String chứa các thông số: 
+	from (brandname) CHÚ Ý: Phân biệt HOA/thường
+	to (số đích) 
+	text (nội dung)
+	
+
+---------------
+JSON full request sample:
+
+POST http://api-02.worldsms.vn/webapi/sendSMS Authorization: Basic YWdlbmN5Om1hdGtoYXU= Content-Type: application/json Accept: application/json
+{
+"from":"VienThongMN",
+"to":"84982128861",
+"text":"Noi dung tin nhan thu nghiem"
+}
+
+===============
+Example:
+var client = new RestClient("URL Web API");
+
+var request = new RestRequest(Method.POST); 
+request.AddHeader("cache-control", "no-cache"); 
+request.AddHeader("authorization", "Basic " + authenKey); 
+request.AddHeader("accept", "application/json"); 
+request.AddHeader("content-type", "application/json");
+request.AddParameter("application/json",jsonSMS, ParameterType.RequestBody); 
+IRestResponse response = client.Execute(request);
+
+

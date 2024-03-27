@@ -1,0 +1,30 @@
+Neu tao PNR bi loi ma van EOT thi response la:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<soapenv:Header>
+		<wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+		<wsa:From>
+			<wsa:Address>https://nodea3.test.webservices.amadeus.com/1ASIWGENQHU</wsa:Address>
+		</wsa:From>
+		<wsa:Action>http://webservices.amadeus.com/PNRADD_21_1_1A</wsa:Action>
+		<wsa:MessageID>urn:uuid:cd588628-a4cb-fc04-41e5-7493215ead1a</wsa:MessageID>
+		<wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">uuid:UHExdlFRbnFHeThJdTVGTA==</wsa:RelatesTo>
+		<awsse:Session TransactionStatusCode="InSeries">
+			<awsse:SessionId>01K2Y6OJTF</awsse:SessionId>
+			<awsse:SequenceNumber>4</awsse:SequenceNumber>
+			<awsse:SecurityToken>1WZMLCLI53P6A10RML93QCWPQP</awsse:SecurityToken>
+		</awsse:Session>
+	</soapenv:Header>
+	<soapenv:Body>
+		<soap:Fault
+			xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+			<faultcode>soap:Server</faultcode>
+			<faultstring>31|Application|FINISH OR IGNORE</faultstring>
+			<faultactor>SI:Backend</faultactor>
+		</soap:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>

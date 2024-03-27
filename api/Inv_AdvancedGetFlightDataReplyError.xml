@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:awsl="http://wsdl.amadeus.com/2010/06/ws/Link_v1"
+	xmlns:awsse="http://xml.amadeus.com/2010/06/Session_v3"
+	xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<soapenv:Header>
+		<wsa:To>http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+		<wsa:From>
+			<wsa:Address>https://nodea3.test.webservices.amadeus.com/1ASIWGENQHU</wsa:Address>
+		</wsa:From>
+		<wsa:Action>http://webservices.amadeus.com/IFLIRQ_15_2_1A</wsa:Action>
+		<wsa:MessageID>urn:uuid:817c8eb1-5467-e0f4-b1d5-04af010f1be6</wsa:MessageID>
+		<wsa:RelatesTo RelationshipType="http://www.w3.org/2005/08/addressing/reply">urn:uuid:cDNXclV0M01yYllyQ0lqTQ==</wsa:RelatesTo>
+		<awsl:TransactionFlowLink>
+			<awsl:Consumer>
+				<awsl:UniqueID>cDNXclV0M01yYllyQ0lqTQ==</awsl:UniqueID>
+			</awsl:Consumer>
+			<awsl:Receiver>
+				<awsl:ServerID>urn:uuid:b4cbd0dc-7c9c-50c1-ac6d-ca882afa7825</awsl:ServerID>
+			</awsl:Receiver>
+		</awsl:TransactionFlowLink>
+		<awsse:Session TransactionStatusCode="InSeries">
+			<awsse:SessionId>01E165T5H1</awsse:SessionId>
+			<awsse:SequenceNumber>1</awsse:SequenceNumber>
+			<awsse:SecurityToken>1F1JHEOORL2OTSVBH2AZ4VJOA</awsse:SecurityToken>
+		</awsse:Session>
+	</soapenv:Header>
+	<soapenv:Body>
+		<Inv_AdvancedGetFlightDataReply >
+			<errorInfo>
+				<applicationErrorInfo>
+					<applicationErrorDetail>
+						<applicationErrorCode>13353</applicationErrorCode>
+						<codeListQualifier>WEC</codeListQualifier>
+					</applicationErrorDetail>
+				</applicationErrorInfo>
+				<interactiveFreeText>
+					<messageQualifier>
+						<textQualifier>ZZZ</textQualifier>
+						<source>M</source>
+						<encoding>2</encoding>
+					</messageQualifier>
+					<messageText>You are not authorised to perform this action.</messageText>
+				</interactiveFreeText>
+			</errorInfo>
+		</Inv_AdvancedGetFlightDataReply>
+	</soapenv:Body>
+</soapenv:Envelope>
